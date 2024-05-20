@@ -1,0 +1,31 @@
+.nav{
+    background-color: var(--white);
+    row-gap: 10px;
+}
+
+img{
+    width: 100px;
+
+}
+.nav__dropdown, .search-button{
+    padding: 10px 15px;
+    border: 1px solid var(--grey);
+    background-color: #fff;
+}
+i{
+    margin-right:  10px;
+    color: var(--green);
+}
+.nav_search{
+    width: 40%;
+}
+.search{
+    width:80%;
+    height: 30px;
+}
+.search-button{
+    width: 15%;
+    height: 35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
