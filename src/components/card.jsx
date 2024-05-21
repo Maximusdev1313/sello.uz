@@ -1,17 +1,27 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-function Cards() {
+import '../assets/Card.css'
+function Cards(props) {
+  // console.log(props.product);
+  const product = props && props.product
   return (
-    <Card style={{ width: '15rem'}}>
-      <Card.Img variant="top" src="https://crdms.images.consumerreports.org/f_auto,w_600/prod/products/cr/models/402431-smartphones-apple-iphone-12-10016496.png"   />
+    <Card style={{ width: '15rem'}} >
+      <i className='fa fa-heart'></i>
+      <Card.Img variant="top" src={product.image}  width={250} height={280} className='card__image'/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+      <Card.Subtitle className="mb-2 text-muted">{product.category}</Card.Subtitle>
+        <Card.Title className='card__title'>{product.title}</Card.Title>
+        <Card.Text className='card__description text'>
+          {product.description}
+          <span className="fade"></span>
+
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title className='card__price '>
+          {product.price} so'm
+          
+
+        </Card.Title>
+        <Button  className='card__button'>Go somewhere</Button>
       </Card.Body>
     </Card>
   );

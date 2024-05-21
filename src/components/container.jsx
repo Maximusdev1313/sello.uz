@@ -1,19 +1,14 @@
 import Cards from './card' 
 import '../assets/Container.css'
 function Container(props){
+    // console.log(props.products);
     return(
         <div className="card-container">
 
-        <div className="title">{props.title}</div>
+        <h6 className="title">{props.title}</h6>
         <div className="wrapper">
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
+            { props.products && props.products.map(product => <Cards product={product} key={product.id}/>)}
+            
         </div>
         </div>
     )

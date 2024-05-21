@@ -1,5 +1,6 @@
 :root{
-  --green: rgb(8, 141, 141);
+  --green: rgb(10, 121, 112);
+  --light-green: rgb(29, 209, 155);
   --grey: rgb(194, 194, 194);
   --white: rgb(255, 255, 255);
   --milk: #f4f4f4;
@@ -25,14 +26,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* .row>*{
-  margin: 0 !important;
-  padding: 0 !important;
-} */
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
+
+
 .flex{
   display: flex;
 }
@@ -53,7 +48,6 @@ code {
 .text{
   color: var(--text-color);
 }
-button{
-  cursor: pointer;
-  border-radius: 5px;
+.title{
+  font-size: 2rem;
 }
