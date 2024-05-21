@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+
+import Container from '../components/container'
 const Home = () => {
+
   return (
     <div>
-      <h1>Home Page</h1>
-      <Link to="/about">Go to About</Link>
+      
+      {/* <Link to="/about">Go to About</Link> */}
+   
+    <Container title='salom'/>
     </div>
   );
 };

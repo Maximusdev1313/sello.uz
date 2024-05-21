@@ -3,16 +3,19 @@ import React from 'react';
 import './assets/App.css';
 import AppRoutes from './routes/clientRoutes'; // Import your routes
 import Header from './components/header';
+import Navbar from 'react-bootstrap/Navbar'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar expand="lg" sticky="top" className="bg-body-tertiary">
         <Header />
-      </header>
-      <AppRoutes />
+      </Navbar>
+      <div className='container'>
+
+        <AppRoutes />
+      </div>
       <footer>
-        footer
       </footer>
     </div>
   );
