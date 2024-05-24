@@ -1,0 +1,19 @@
+.carousel-container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.animated{
+    max-width: 50%; 
+    height: 55vh;
+  
+
+}
+.home{
+    max-width: 40% !important;
+}
+.img-fluid{
+    width: 100%;
+    height: 55vh !important;
+}

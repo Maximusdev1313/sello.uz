@@ -1,14 +1,19 @@
-.card__title{
+.card-title{
     height: 30px;
+    font-size: 1rem !important;
     overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.card-subtitle{
+    font-size: 0.7rem !important;
 }
 .card__description {
     position: relative;
     height: 3.6em;  /* adjust this value to change the number of lines */
     line-height: 1.2em;
     overflow: hidden;
+    font-size: 0.7rem !important;
   }
   
 .card__description p {
@@ -24,7 +29,7 @@
 }
 .card__image{
     width: 80% !important;
-    height: 170px;
+    height: 200px;
     padding: 15px 10px;
     margin: 0 auto;
 }
@@ -32,4 +37,13 @@
     width: 100%;
     background-color: var(--green) !important;
     border: 1px solid var(--light-green) !important;
+    padding: 2px 0 !important;
+}
+.heart-icon{
+    width: 90%;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 20px;
 }
